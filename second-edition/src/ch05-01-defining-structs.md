@@ -76,7 +76,10 @@ user1.email = String::from("anotheremail@example.com");
 <span class="caption">Listing 5-3: `User` 인스턴스의 `email`필드 변경하기</span>
 
 
-인스턴스는 반드시 `변경 가능(mutalbe)`해야합니다. Rust에서는 특정 필드만 변경할 수 있도록 허용하지 않습니다. 다른 표현식과 마찬가지로, 함수 본문의 마지막에 새 인스턴스 구조체를 표현식(expressions)으로 생성하여 새 인스턴스를 바로 반환 할 수 있습니다.
+인스턴스는 반드시 `변경 가능(mutable)`해야합니다.
+Rust에서는 특정 필드만 변경할 수 있도록 허용하지 않습니다.
+다른 표현식과 마찬가지로, 함수 본문의 마지막에 새 인스턴스 구조체를
+표현식(expressions)으로 생성하여 새 인스턴스를 바로 반환 할 수 있습니다.
 
 Listing 5-4 주어진 `email`과 `user_name`으로 `User` 인스턴스를 반환하는 `build_user` 함수를 보여줍니다. 활성 필드는 true 값을 가져오고 sign_in_count는 1 값을 가져옵니다.
 
